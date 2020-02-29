@@ -31,7 +31,5 @@ final class LessonsModulePresenter: LessonsModuleViewPresenter {
     }
     
     // MARK: Methods
-    func showLessoneInfo(lesson: Lesson){
-        router?.showLessonViewMudule(lesson: lesson)
-    }
+    
 }

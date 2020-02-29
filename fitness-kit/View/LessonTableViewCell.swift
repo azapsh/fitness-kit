@@ -28,6 +28,7 @@ class LessonTableViewCell: UITableViewCell {
     }
     
     func setup(less:Lesson){
+        print("less>",less.name, " lesson.color>",lesson.color)
         self.lesson = less
         nameLabel.text = lesson.name
         descriptionTextView.text = lesson.descript

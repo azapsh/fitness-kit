@@ -89,12 +89,10 @@ struct R: Rswift.Validatable {
   }
 
   #if os(iOS) || os(tvOS)
-  /// This `R.storyboard` struct is generated, and contains static references to 4 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 3 storyboards.
   struct storyboard {
     /// Storyboard `LaunchScreen`.
     static let launchScreen = _R.storyboard.launchScreen()
-    /// Storyboard `LessenViewModuleViewController`.
-    static let lessenViewModuleViewController = _R.storyboard.lessenViewModuleViewController()
     /// Storyboard `LessonsModuleViewController`.
     static let lessonsModuleViewController = _R.storyboard.lessonsModuleViewController()
     /// Storyboard `Main`.
@@ -104,13 +102,6 @@ struct R: Rswift.Validatable {
     /// `UIStoryboard(name: "LaunchScreen", bundle: ...)`
     static func launchScreen(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.launchScreen)
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    /// `UIStoryboard(name: "LessenViewModuleViewController", bundle: ...)`
-    static func lessenViewModuleViewController(_: Void = ()) -> UIKit.UIStoryboard {
-      return UIKit.UIStoryboard(resource: R.storyboard.lessenViewModuleViewController)
     }
     #endif
 
@@ -222,9 +213,6 @@ struct _R: Rswift.Validatable {
       try launchScreen.validate()
       #endif
       #if os(iOS) || os(tvOS)
-      try lessenViewModuleViewController.validate()
-      #endif
-      #if os(iOS) || os(tvOS)
       try lessonsModuleViewController.validate()
       #endif
       #if os(iOS) || os(tvOS)
@@ -238,22 +226,6 @@ struct _R: Rswift.Validatable {
 
       let bundle = R.hostingBundle
       let name = "LaunchScreen"
-
-      static func validate() throws {
-        if #available(iOS 11.0, tvOS 11.0, *) {
-        }
-      }
-
-      fileprivate init() {}
-    }
-    #endif
-
-    #if os(iOS) || os(tvOS)
-    struct lessenViewModuleViewController: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      typealias InitialController = LessenViewModuleViewController
-
-      let bundle = R.hostingBundle
-      let name = "LessenViewModuleViewController"
 
       static func validate() throws {
         if #available(iOS 11.0, tvOS 11.0, *) {

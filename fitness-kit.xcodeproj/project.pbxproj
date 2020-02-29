@@ -11,7 +11,6 @@
 		43C1F0258AE0496E3BB60BDF /* LessonsModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A658E1BA471579368C96F8 /* LessonsModulePresenter.swift */; };
 		5AAC58CAF2F32E43608E5013 /* LessonsModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5017396344770C2342406DC8 /* LessonsModuleRouter.swift */; };
 		5CBA9F5C6FB016B88D406140 /* LaunchModuleePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A0DC9C538BAC3644607DAE /* LaunchModuleePresenter.swift */; };
-		83DB21921B8C52019451E15F /* LessenViewModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370015BA8B04D427B537C024 /* LessenViewModuleRouter.swift */; };
 		8B889D2B24090DAE00F6C9B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B889D2A24090DAE00F6C9B3 /* AppDelegate.swift */; };
 		8B889D2D24090DAE00F6C9B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B889D2C24090DAE00F6C9B3 /* SceneDelegate.swift */; };
 		8B889D2F24090DAE00F6C9B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B889D2E24090DAE00F6C9B3 /* ViewController.swift */; };
@@ -29,9 +28,6 @@
 		8B889D5F24092F5C00F6C9B3 /* LessonsModuleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B889D5E24092F5C00F6C9B3 /* LessonsModuleViewController.storyboard */; };
 		8B889D632409323D00F6C9B3 /* LessonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B889D612409323D00F6C9B3 /* LessonTableViewCell.swift */; };
 		8B889D642409323D00F6C9B3 /* LessonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B889D622409323D00F6C9B3 /* LessonTableViewCell.xib */; };
-		8B978F0D240986D2000248BE /* LessenViewModuleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B978F0C240986D2000248BE /* LessenViewModuleViewController.storyboard */; };
-		9753DCE97CDF167E4DA43581 /* LessenViewModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90A3AE22C5BC9A0D1F3ABF4 /* LessenViewModulePresenter.swift */; };
-		A2060A9EFF5436B7578DDBB4 /* LessenViewModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127B4726D37A1903490B88F4 /* LessenViewModuleViewController.swift */; };
 		D44A684B505C3D92F350C2C8 /* LessonsModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E27B3B108777585A36E85A /* LessonsModuleViewController.swift */; };
 		EB392C722BF1B5EDAD3E782A /* LaunchModuleeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C30A2CE2613D2B933FA3F9E /* LaunchModuleeRouter.swift */; };
 		FC35671255849A95FB7637C0 /* Pods_fitness_kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 595EC072E9FE36E9208AAAC5 /* Pods_fitness_kit.framework */; };
@@ -39,8 +35,6 @@
 
 /* Begin PBXFileReference section */
 		11BDF44E3AE2B674E680E153 /* LaunchModuleeViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LaunchModuleeViewController.swift; path = ../LaunchModuleeViewController.swift; sourceTree = "<group>"; };
-		127B4726D37A1903490B88F4 /* LessenViewModuleViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LessenViewModuleViewController.swift; path = ../LessenViewModuleViewController.swift; sourceTree = "<group>"; };
-		370015BA8B04D427B537C024 /* LessenViewModuleRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LessenViewModuleRouter.swift; path = ../LessenViewModuleRouter.swift; sourceTree = "<group>"; };
 		5017396344770C2342406DC8 /* LessonsModuleRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LessonsModuleRouter.swift; path = ../LessonsModuleRouter.swift; sourceTree = "<group>"; };
 		52E27B3B108777585A36E85A /* LessonsModuleViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LessonsModuleViewController.swift; path = ../LessonsModuleViewController.swift; sourceTree = "<group>"; };
 		595EC072E9FE36E9208AAAC5 /* Pods_fitness_kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fitness_kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,10 +60,8 @@
 		8B889D5E24092F5C00F6C9B3 /* LessonsModuleViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LessonsModuleViewController.storyboard; sourceTree = "<group>"; };
 		8B889D612409323D00F6C9B3 /* LessonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTableViewCell.swift; sourceTree = "<group>"; };
 		8B889D622409323D00F6C9B3 /* LessonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LessonTableViewCell.xib; sourceTree = "<group>"; };
-		8B978F0C240986D2000248BE /* LessenViewModuleViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LessenViewModuleViewController.storyboard; sourceTree = "<group>"; };
 		93A0DC9C538BAC3644607DAE /* LaunchModuleePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LaunchModuleePresenter.swift; path = ../LaunchModuleePresenter.swift; sourceTree = "<group>"; };
 		B9A658E1BA471579368C96F8 /* LessonsModulePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LessonsModulePresenter.swift; path = ../LessonsModulePresenter.swift; sourceTree = "<group>"; };
-		F90A3AE22C5BC9A0D1F3ABF4 /* LessenViewModulePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LessenViewModulePresenter.swift; path = ../LessenViewModulePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +138,6 @@
 			children = (
 				99A52F088A04A929C91A52ED /* LaunchModule */,
 				ABB93E32A4E86511C5558335 /* LessonsModule */,
-				DE50118DCCBF6C66A0381BF5 /* LessenViewModule */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -251,31 +242,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		8B978F09240986A9000248BE /* View */ = {
-			isa = PBXGroup;
-			children = (
-				127B4726D37A1903490B88F4 /* LessenViewModuleViewController.swift */,
-				8B978F0C240986D2000248BE /* LessenViewModuleViewController.storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		8B978F0A240986AF000248BE /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				F90A3AE22C5BC9A0D1F3ABF4 /* LessenViewModulePresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		8B978F0B240986B5000248BE /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				370015BA8B04D427B537C024 /* LessenViewModuleRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
 		99A52F088A04A929C91A52ED /* LaunchModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,16 +260,6 @@
 				8B889D5B24092F3600F6C9B3 /* Router */,
 			);
 			path = LessonsModule;
-			sourceTree = "<group>";
-		};
-		DE50118DCCBF6C66A0381BF5 /* LessenViewModule */ = {
-			isa = PBXGroup;
-			children = (
-				8B978F0B240986B5000248BE /* Router */,
-				8B978F0A240986AF000248BE /* Presenter */,
-				8B978F09240986A9000248BE /* View */,
-			);
-			path = LessenViewModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,7 +323,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B978F0D240986D2000248BE /* LessenViewModuleViewController.storyboard in Resources */,
 				8B889D3A24090DAF00F6C9B3 /* LaunchScreen.storyboard in Resources */,
 				8B889D642409323D00F6C9B3 /* LessonTableViewCell.xib in Resources */,
 				8B889D5F24092F5C00F6C9B3 /* LessonsModuleViewController.storyboard in Resources */,
@@ -462,9 +417,6 @@
 				5AAC58CAF2F32E43608E5013 /* LessonsModuleRouter.swift in Sources */,
 				43C1F0258AE0496E3BB60BDF /* LessonsModulePresenter.swift in Sources */,
 				D44A684B505C3D92F350C2C8 /* LessonsModuleViewController.swift in Sources */,
-				83DB21921B8C52019451E15F /* LessenViewModuleRouter.swift in Sources */,
-				9753DCE97CDF167E4DA43581 /* LessenViewModulePresenter.swift in Sources */,
-				A2060A9EFF5436B7578DDBB4 /* LessenViewModuleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
