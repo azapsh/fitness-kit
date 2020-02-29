@@ -18,10 +18,16 @@ extension SwinjectStoryboard {
             let presenter = LaunchModulePresenter(with: container, router: router)
             container.presenter = presenter
         }
-        // MARK: LaunchViewController as Example
+        // MARK: LessonsModuleViewController as Example
         defaultContainer.storyboardInitCompleted(LessonsModuleViewController.self) { (resolver, container) in
             let router = LessonsModuleRouterImplementation(with: container)
             let presenter = LessonsModulePresenter(with: container, router: router)
+            container.presenter = presenter
+        }
+        // MARK: LessenViewModuleViewController as Example
+        defaultContainer.storyboardInitCompleted(LessenViewModuleViewController.self) { (resolver, container) in
+            let router = LessenViewModuleRouterImplementation(with: container)
+            let presenter = LessenViewModulePresenter(with: container, router: router)
             container.presenter = presenter
         }
     }

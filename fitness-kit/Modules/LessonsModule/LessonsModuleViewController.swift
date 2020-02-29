@@ -29,6 +29,7 @@ final class LessonsModuleViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
 
     // MARK: Methods
@@ -39,15 +40,18 @@ final class LessonsModuleViewController: UIViewController {
 
 extension LessonsModuleViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("LessonsService.shared.lessons.count>",LessonsService.shared.lessons.count)
         return LessonsService.shared.lessons.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LessonTableViewCell") as! LessonTableViewCell
-        print(" LessonsService.shared.lessons[indexPath.row]>",indexPath.row," ->",LessonsService.shared.lessons[indexPath.row])
         cell.setup(less: LessonsService.shared.lessons[indexPath.row])
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let lesson = LessonsService.shared.lessons[indexPath.row]
+        presenter?.showLessoneInfo(lesson: lesson)
     }
 }
 

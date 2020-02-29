@@ -8,9 +8,10 @@
 
 import Foundation
 import UIKit
+import SwinjectStoryboard
 
 protocol LessonsModuleRouter: class {
-
+    func showLessonViewMudule(lesson: Lesson)
 }
 
 final class LessonsModuleRouterImplementation: LessonsModuleRouter {
@@ -23,6 +24,13 @@ final class LessonsModuleRouterImplementation: LessonsModuleRouter {
         self.view = viewController
     }
     // MARK: Internal helpers
-
+    func showLessonViewMudule(lesson: Lesson) {
+          let sb = SwinjectStoryboard.create(name: R.storyboard.lessenViewModuleViewController.name, bundle: nil)
+          guard let vc = sb.instantiateInitialViewController() as? LessenViewModuleViewController else {
+              return
+          }
+          view?.navigationController?.setNavigationBarHidden(false, animated: false)
+          view?.navigationController?.pushViewController(vc, animated: true) 
+      }
 }
 

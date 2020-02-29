@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oA0-d9-yKb">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lessen View Module View Controller-->
+        <scene sceneID="GZw-jr-R5h">
+            <objects>
+                <viewController id="oA0-d9-yKb" customClass="LessenViewModuleViewController" customModule="fitness_kit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Td-LS-HpN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="AvI-gO-mpq">
+                                <rect key="frame" x="16" y="0.0" width="288" height="568"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OT3-GA-CyR">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="250"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="IVU-Fp-8Pg"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oHj-Uz-48T">
+                                        <rect key="frame" x="0.0" y="291" width="288" height="186"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="186" id="sDY-BN-l9w"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KPY-Dt-M6c">
+                                        <rect key="frame" x="0.0" y="518" width="288" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="UyZ-PI-QIb"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="OT3-GA-CyR" firstAttribute="top" secondItem="AvI-gO-mpq" secondAttribute="top" id="7dj-0t-XCI"/>
+                                    <constraint firstItem="OT3-GA-CyR" firstAttribute="leading" secondItem="AvI-gO-mpq" secondAttribute="leading" id="RyR-3c-HVe"/>
+                                    <constraint firstAttribute="trailing" secondItem="OT3-GA-CyR" secondAttribute="trailing" id="b8a-gR-Wjc"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hmQ-8H-trD" firstAttribute="bottom" secondItem="AvI-gO-mpq" secondAttribute="bottom" id="26Y-cG-mP2"/>
+                            <constraint firstItem="hmQ-8H-trD" firstAttribute="top" secondItem="AvI-gO-mpq" secondAttribute="top" id="Tc1-jS-a3I"/>
+                            <constraint firstItem="hmQ-8H-trD" firstAttribute="trailing" secondItem="AvI-gO-mpq" secondAttribute="trailing" constant="16" id="nV5-oL-d9W"/>
+                            <constraint firstItem="AvI-gO-mpq" firstAttribute="leading" secondItem="hmQ-8H-trD" secondAttribute="leading" constant="16" id="ohV-zT-IgV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hmQ-8H-trD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OCC-mF-dOz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="124.55357142857142"/>
+        </scene>
+    </scenes>
+</document>
